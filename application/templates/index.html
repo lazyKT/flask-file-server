@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        MM 2021
+    </title>
+    <script
+        type="text/javascript"
+        src="{{ url_for('static', filename='index.js') }}"
+    >
+    </script>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div style="display: block;width: 70%;margin: auto;">
+        <input type="text" name="desc" id="desc"/>
+        <br/>
+        <input type="file" name="file" id="input"/>
+        <br/>
+        <button id="upload-btn" onclick="upload_file()">
+            Upload
+        </button>
+    </div>
+    <!-- <div class="container">
+        {% for record in records %}
+            <div class="content">
+                <img class="img" alt="" src="static/images/{{record.name}}"/>
+                <div class="info-div">
+                    <span id="tag" class="tag">{{ record.tag }}</span>
+                    <span class="timeline">Day&nbsp;{{ record.timeline }}</span>
+                    <span class="date">{{ record['created on'] }}</span>
+                </div>
+                <p class="desc">{{ record.description }}</p>
+            </div>
+        {% endfor %}
+    </div> -->
+</body>
